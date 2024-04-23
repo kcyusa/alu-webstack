@@ -30,7 +30,7 @@ frontend www-http
 
 # Frontend to accept incoming connections on TCP port 443 for SSL
 frontend www-https
-    bind *:443 ssl crt  /etc/letsencrypt/live/www.annemarie535257.tech/fullchain.pem
+    bind *:443 ssl crt  /etc/letsencrypt/live/www.cyusakeny.tech/fullchain.pem
     reqadd X-Forwarded-Proto:\ https
     default_backend www-backend
 
